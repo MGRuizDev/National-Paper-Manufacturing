@@ -11,23 +11,42 @@ First and one of the most important steps is to make this data accurate and rely
 
 <br>
 
-Filling missing values      WHERE num_of_doors IS NULL; if there are use: UPDATE car_info SET num_of_doors = "four" WHERE make = "dodge"
-Identify potential errors   You can use SELECT DISTINCT to check what values exist in a column any misspelling, if any use UPDATE
-Check for inconsistencies   length column (SELECT MIN(length), MAX(length) FROM cars.car_info;), proper range value column (SELECT MIN(length), if                              any can use DELETE WHERE), extra spaces
-
-Sources of errors:
-Null data: 
-Misspelled words: 
-Mistyped numbers: 
-Extra spaces and characters:  TRIM function?
-Duplicates: DISTINCT in SQL?
-Mismatched data types: numeric, date, and string data are typecast correctly?
-Messy (inconsistent) strings: strings are consistent and meaningful?
-Messy (inconsistent) date formats: 
-Misleading variable labels (columns): columns name are meaningful?
-Truncated data: truncated or missing data that needs correction?
-Business Logic: Did you check that the data makes sense given your knowledge of the business? 
+Filling missing values: I could use the "IS NULL" functionality then UPDATE any value WHERE needed. <br>
+Identify potential errors: By using DISTINCT I can observe what potential misspelling exist in a column, then UPDATE. <br>
+Check for inconsistencies: If I want to check proper range value in a column. MIN and MAX, <br>
+                            along with LENGTH can be used then DELETE, WHERE needed.  <br>
+                            In the case of extra spaces on values, TRIM can be used. <br>
+Mismatched data types: When encounter this problem I can use CAST to convert into an appropiate value. <br>
+Check for inconsistent strings: Strings are consistent and meaningful. <br>
+Check for misleading column/attributes labels: Columns name are meaningful. <br>
+Truncated data: There is not missing data. <br>
+Business Logic: Data makes sense given the nature of the business process. <br>
 
 
+<br>
+<br>
+<br>
+
+
+
+
+#### List regions buying the most first along with each representatives for each region and which are the most active accounts
+
+Find the number of sales reps in each region. Your final table should have two columns - the region and the number of sales_reps. Order from fewest reps to most reps.
+
+How many of the sales reps have more than 5 accounts that they manage?
+
+
+How many accounts have more than 20 orders?
+
+
+Which account has the most orders?
+
+
+Which accounts spent more than 30,000 usd total across all orders?
+
+
+Provide a table that provides the region for each sales_rep along with their associated accounts. Your final table should include three columns: the region name, the sales rep name, and the account name. Sort the accounts alphabetically (A-Z) according to account name
+Provide the name for each region for every order, as well as the account name and the unit price they paid (total_amt_usd/total) for the order. Your final table should have 3 columns: region name, account name, and unit price. A few accounts have 0 for total, so I divided by (total + 0.01) to assure not dividing by zero.
 
 
