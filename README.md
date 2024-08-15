@@ -30,28 +30,29 @@ Business Logic: Data makes sense given the nature of the business process. <br>
 
 
 
-#### 1  List all regions along with each representatives for each region and their respective active account.
+#### 1  
+List all regions along with each of their representatives and their respective active account.
 <br>
-#1picture
+![Region, Account, Representative Revenue](/images/1.png)
 <br>
 A quick overview of the 350 accounts with the representative and region to which they belong and the total revenue. We can tell that Northeast has more accounts.
 <br>
 <br>
-2 Provide the name of the sales_rep in each region with their amount of total_amt_usd sales.
+Provide the name of the sales_rep in each region with their amount of total_amt_usd sales.
 <br>
-##2
+![Total Revenue Representative](/images/2.png)
 <br>
 This shows the total amount of revenue by each representative.
 <br>
 <br>
 3 Joining two subqueries
 <br>
-##3
+![Total Region Revenue](/images/3.png)
 <br>
 A small tweak to the last query (sub2) to show only regions and largest total revenue, then join two queries, the modified sub2 and the sub. Now we can get the best representatives by region.
 <br>
 <br>
 4 For the region with the largest (sum) of sales total_amt_usd, how many total (count) orders were placed?
 <br>
-##4
+![Total Orders By Region](/images/4.png)
 <br>
