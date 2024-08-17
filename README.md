@@ -75,7 +75,7 @@ Show orders time by web_events time, calculate duration time between them, and c
 ![](/images/5.png)
 <br>
 
-Which accounts used facebook as a channel to contact customers more than 6 times?
+How many times was each chanel used?
 
 
 <br>
@@ -89,3 +89,140 @@ For the customer that spent the most (in total over their lifetime as a customer
 <br>
 ![](/images/7.png)
 <br>
+
+
+
+
+
+
+<br>
+<br>
+<br>
+<br>
+
+
+
+Let’s observe the sales data over time.
+
+
+Find the sales in terms of total dollars for all orders in each year, ordered from greatest to least. Do you notice any trends in the yearly sales totals?
+
+
+<br>
+![](/images/8.png)
+<br>
+
+
+
+Which month did Parch & Posey have the greatest sales in terms of total dollars? Are all months evenly represented by the dataset? Include of total number of orders?
+
+
+
+
+<br>
+![](/images/9.png)
+<br>
+
+
+
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+
+(The reputation of the company is greatly represented by the quality of their products)
+
+	Find the mean (AVERAGE) amount spent per order on each paper type, as well as the mean amount of each paper type purchased per order. Your final answer should have 6 values - one for each paper type for the average number of sales, as well as the average amount.
+
+
+<br>
+![](/images/10.png)
+<br>
+
+
+
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+
+
+(Which accounts are the top buyers and what products are they buying)
+List accounts top buyers from top to bottom along with the quantity and total of each product
+
+
+<br>
+![](/images/11.png)
+<br>
+
+
+
+
+For each account, determine the average amount spent per order on each paper type. Your result should have four columns - one for the account name and one for the average amount spent on each paper type.
+
+
+
+<br>
+![](/images/12.png)
+<br>
+
+
+
+
+
+We would like to understand 3 different levels of customers based on the amount associated with their purchases. The top level includes anyone with a Lifetime Value (total sales of all orders) greater than 200,000 usd. The second level is between 200,000 and 100,000 usd. The lowest level is anyone under 100,000 usd. Provide a table that includes the level associated with each account. You should provide the account name, the total sales of all orders for the customer, and the level. Order with the top spending customers listed first.
+
+
+
+
+<br>
+![](/images/13.png)
+<br>
+
+
+
+
+
+
+How many accounts had more total purchases than the account name which has bought the most standard_qty paper throughout their lifetime as a customer?
+
+<br>
+![](/images/14.png)
+<br>
+
+
+
+
+What is the lifetime average amount spent in terms of total_amt_usd for the top 10 total spending accounts?
+
+
+<br>
+![](/images/15.png)
+<br>
+######################################################
+
+
+<br>
+![](/images/16.png)
+<br>
+
+
+
+
+
+
+What is the lifetime average amount spent in terms of total_amt_usd, including only the companies that spent more per order, on average, than the average of all orders.
+
+
+
+
