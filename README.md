@@ -212,7 +212,7 @@ Want to know who is your most loyal customer who spends a lot of money on the pr
 <br>
 <br>
 
-What is the average of total sales for each of the top 10 buyers.
+16.- What is the average of total sales for each of the top 10 buyers.
 <br>
 ![](/images/16.png)
 <br>
