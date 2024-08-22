@@ -11,23 +11,31 @@ First and one of the most important steps is to make this data accurate and reli
 
 <br>
 
-Filling missing values: I could use the "IS NULL" functionality then UPDATE any value WHERE needed. <br>
+Filling missing values: <br>
+I could use the "IS NULL" functionality then UPDATE any value WHERE needed. <br>
 <br>
-Identify potential errors: By using DISTINCT I can observe what potential misspelling exist in a column, then UPDATE. <br>
+Identify potential errors: <br>
+By using DISTINCT I can observe what potential misspelling exist in a column, then UPDATE. <br>
 <br>
-Check for inconsistencies: If I want to check proper range value in a column. MIN and MAX, <br>
+Check for inconsistencies: <br>
+If I want to check proper range value in a column. MIN and MAX, <br>
                             along with LENGTH can be used then DELETE, WHERE needed.  <br>
                             In the case of extra spaces on values, TRIM can be used. <br>
 <br>
-Mismatched data types: When encounter this problem I can use CAST to convert into an appropiate value. <br>
+Mismatched data types: <br>
+When encounter this problem I can use CAST to convert into an appropiate value. <br>
 <br>
-Check for inconsistent strings: Strings are consistent and meaningful. <br>
+Check for inconsistent strings: <br>
+Strings are consistent and meaningful. <br>
 <br>
-Check for misleading column/attributes labels: Columns name are meaningful. <br>
+Check for misleading column/attributes labels: <br>
+Columns name are meaningful. <br>
 <br>
-Truncated data: There is not missing data. <br>
+Truncated data: <br>
+There is not missing data. <br>
 <br>
-Business Logic: Data makes sense given the nature of the business process. <br>
+Business Logic: <br>
+Data makes sense given the nature of the business process. <br>
 
 
 <br>
@@ -38,28 +46,40 @@ Business Logic: Data makes sense given the nature of the business process. <br>
 
 
 #### QUERIES
-List all regions with their respective representatives showing active accounts and total revenue for each representative.
+1.- List all regions with their respective representatives showing active accounts and total revenue for each representative.
 <br>
 ![Region, Account, Representative Revenue](/images/1.png)
 <br>
  A quick overview of the 350 accounts and which representatives they are working with and  total revenue each is accumulaiting. We can tell that Northeast has more accounts.
+ 
 <br>
 <br>
-Provide the representatives with their total revenue by region.
+<br>
+<br>
+
+2.- Provide the representatives with their total revenue by region.
 <br>
 ![Total Revenue Representative](/images/2.png)
 <br>
 What region has more bestsellers representatives and which are not doing very good.
+
 <br>
 <br>
-List only the best sellers of each region.
+<br>
+<br>
+
+3.- List only the best sellers of each region.
 <br>
 ![Total Region Revenue](/images/3.png)
 <br>
 A small tweak to the last query (sub2) to show only regions and largest total revenue, then join two queries, the modified sub2 and the sub. Now we can get only the best representatives by region.
+
 <br>
 <br>
-For the region with the largest of sales, how many total orders were placed?
+<br>
+<br>
+
+4.- For the region with the largest of sales, how many total orders were placed?
 <br>
 ![Total Orders By Region](/images/4.png)
 <br>
@@ -67,8 +87,10 @@ The volume of orders made from the best performer region.
 
 <br>
 <br>
+<br>
+<br>
 
-The time between first contact and buying can tell us if the channel is working properly or if there is a preferred channel to use. And if the order is small or large) Show orders time by web_events time, calculate duration time between them, and channel used, also account name,(avg duration by channel). Total in usd.
+5.- The time between first contact and buying can tell us if the channel is working properly or if there is a preferred channel to use. And if the order is small or large) Show orders time by web_events time, calculate duration time between them, and channel used, also account name,(avg duration by channel). Total in usd.
 <br>
 ![Dummy ](/images/5.png)
 <br>
@@ -76,15 +98,22 @@ How long it took for the buyers to make the sale from the time of initial intere
 
 <br>
 <br>
-How many times was each chanel used?
-<br>
-![](/images/6.png)
-<br>
-Which of the channels, to attract buyers and generate sales, are the most used.
 <br>
 <br>
 
-For the customer that spent the most over their lifetime, how many web_events did they have for each channel?
+6.- How many times was each chanel used?
+<br>
+
+![](/images/6.png)
+<br>
+Which of the channels, to attract buyers and generate sales, are the most used.
+
+<br>
+<br>
+<br>
+<br>
+
+7.- For the customer that spent the most over their lifetime, how many web_events did they have for each channel?
 <br>
 ![](/images/7.png)
 <br>
@@ -95,7 +124,7 @@ Which are the buying habits of the best customer.
 <br>
 <br>
 
-Find the sum of sales revenue for each year, order by year. 
+8.- Find the sum of sales revenue for each year, order by year. 
 <br>
 ![](/images/8.png)
 <br>
@@ -103,8 +132,10 @@ I can observe the sales data over time, in order to notice any trends in the yea
 
 <br>
 <br>
+<br>
+<br>
 
-Total revenue and number of orders by month.
+9.- Total revenue and number of orders by month.
 <br>
 ![](/images/9.png)
 <br>
@@ -116,7 +147,7 @@ Which months have more sales and total revenue.
 <br>
 <br>
 
-Find the mean (AVERAGE) amount spent per order on each paper type, as well as the mean amount of each paper type purchased per order.
+10.- Find the mean (AVERAGE) amount spent per order on each paper type, as well as the mean amount of each paper type purchased per order.
 <br>
 ![](/images/10.png)
 <br>
@@ -128,7 +159,7 @@ Which type of paper is more in demand and which are not, there is a reason. The 
 <br>
 <br>
 
-List accounts top buyers from top to bottom along with the total quantity of each product.
+11.- List accounts top buyers from top to bottom along with the total quantity of each product.
 <br>
 ![](/images/11.png)
 <br>
@@ -136,8 +167,10 @@ Which accounts are the top buyers and what products are they buying.
 
 <br>
 <br>
+<br>
+<br>
 
-For each account, determine the average amount spent per order on each paper type.
+12.- For each account, determine the average amount spent per order on each paper type.
 <br>
 ![](/images/12.png)
 <br>
@@ -145,32 +178,37 @@ How much are customers spending on each product, and what is the mean of total s
 
 <br>
 <br>
+<br>
+<br>
 
-We would like to understand 3 different levels of customers based on the amount associated with their purchases. The top level includes anyone with a Lifetime Value (total sales of all orders) greater than 200,000 usd. The second level is between 200,000 and 100,000 usd. The lowest level is anyone under 100,000 usd. Provide the level associated with each account in the results.
+13.- We would like to understand 3 different levels of customers based on the amount associated with their purchases. The top level includes anyone with a Lifetime Value (total sales of all orders) greater than 200,000 usd. The second level is between 200,000 and 100,000 usd. The lowest level is anyone under 100,000 usd. Provide the level associated with each account in the results.
 <br>
 ![](/images/13.png)
 <br>
 Want to know who is your most loyal customer who spends a lot of money on the products.
 
+<br>
+<br>
+<br>
+<br>
 
-
-
-
-How many accounts had more total purchases than the account name which has bought the most standard_qty paper throughout their lifetime as a customer?
+14.- How many accounts had more total purchases than the account name which has bought the most standard_qty paper throughout their lifetime as a customer?
 <br>
 ![](/images/14.png)
 <br>
 
-
+<br>
+<br>
 <br>
 <br>
 
-What is the lifetime average amount spent in terms of total_amt_usd for the top 10 total spending accounts?
+15.- What is the lifetime average amount spent in terms of total_amt_usd for the top 10 total spending accounts?
 <br>
 ![](/images/15.png)
 <br>
 
-
+<br>
+<br>
 <br>
 <br>
 
@@ -179,7 +217,8 @@ What is the average of total sales for each of the top 10 buyers.
 ![](/images/16.png)
 <br>
 
-
+<br>
+<br>
 <br>
 <br>
 
