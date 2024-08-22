@@ -38,80 +38,77 @@ Business Logic: Data makes sense given the nature of the business process. <br>
 
 
 #### QUERIES
-List all regions along with each of their representatives and their respective active account.
+List all regions with their respective representatives showing active accounts and total revenue for each representative.
 <br>
 ![Region, Account, Representative Revenue](/images/1.png)
 <br>
-A quick overview of the 350 accounts with the representative and region to which they belong and the total revenue. We can tell that Northeast has more accounts.
+ A quick overview of the 350 accounts and which representatives they are working with and  total revenue each is accumulaiting. We can tell that Northeast has more accounts.
 <br>
 <br>
-Provide the name of the sales_rep in each region with their amount of total_amt_usd sales.
+Provide the representatives with their total revenue by region.
 <br>
 ![Total Revenue Representative](/images/2.png)
 <br>
-This shows the total amount of revenue by each representative.
+What region has more bestsellers representatives and which are not doing very good.
 <br>
 <br>
-Show the best representative for each region
+List only the best sellers of each region.
 <br>
 ![Total Region Revenue](/images/3.png)
 <br>
-A small tweak to the last query (sub2) to show only regions and largest total revenue, then join two queries, the modified sub2 and the sub. Now we can get the best representatives by region.
+A small tweak to the last query (sub2) to show only regions and largest total revenue, then join two queries, the modified sub2 and the sub. Now we can get only the best representatives by region.
 <br>
 <br>
-For the region with the largest (sum) of sales total_amt_usd, how many total (count) orders were placed?
+For the region with the largest of sales, how many total orders were placed?
 <br>
 ![Total Orders By Region](/images/4.png)
 <br>
+The volume of orders made from the best performer region.
 
+<br>
+<br>
 
-
-
-
-(The time between first contact and buying can tell us if the channel is working properly or if there is a preferred channel to use. And if the order is small or large)
-Show orders time by web_events time, calculate duration time between them, and channel used, also account name,(avg duration by channel). Total in usd.
+The time between first contact and buying can tell us if the channel is working properly or if there is a preferred channel to use. And if the order is small or large) Show orders time by web_events time, calculate duration time between them, and channel used, also account name,(avg duration by channel). Total in usd.
 <br>
 ![Dummy ](/images/5.png)
 <br>
+How long it took for the buyers to make the sale from the time of initial interest for the product to the time of the order placed.
 
+<br>
+<br>
 How many times was each chanel used?
 <br>
 ![](/images/6.png)
 <br>
+Which of the channels, to attract buyers and generate sales, are the most used.
+<br>
+<br>
 
-
-For the customer that spent the most (in total over their lifetime as a customer) total_amt_usd, how many web_events did they have for each channel?
+For the customer that spent the most over their lifetime, how many web_events did they have for each channel?
 <br>
 ![](/images/7.png)
 <br>
-
-
-
-
-
+Which are the buying habits of the best customer.
 
 <br>
 <br>
 <br>
 <br>
 
-
-
-Let’s observe the sales data over time.
-
-
-Find the sales in terms of total dollars for all orders in each year, ordered from greatest to least. Do you notice any trends in the yearly sales totals?
+Find the sum of sales revenue for each year, order by year. 
 <br>
 ![](/images/8.png)
 <br>
+I can observe the sales data over time, in order to notice any trends in the yearly sales totals.
 
+<br>
+<br>
 
-
-Which month did Parch & Posey have the greatest sales in terms of total dollars? Are all months evenly represented by the dataset? Include of total number of orders?
+Total revenue and number of orders by month.
 <br>
 ![](/images/9.png)
 <br>
-
+Which months have more sales and total revenue.
 
 
 <br>
@@ -119,18 +116,11 @@ Which month did Parch & Posey have the greatest sales in terms of total dollars?
 <br>
 <br>
 
-
-
-
-
-
-(The reputation of the company is greatly represented by the quality of their products)
-
-Find the mean (AVERAGE) amount spent per order on each paper type, as well as the mean amount of each paper type purchased per order. Your final answer should have 6 values - one for each paper type for the average number of sales, as well as the average amount.
+Find the mean (AVERAGE) amount spent per order on each paper type, as well as the mean amount of each paper type purchased per order.
 <br>
 ![](/images/10.png)
 <br>
-
+Which type of paper is more in demand and which are not, there is a reason. The reputation of the company is greatly represented by the quality of their products, therefore having a view of how the products sales situation it is important.
 
 
 <br>
@@ -138,35 +128,29 @@ Find the mean (AVERAGE) amount spent per order on each paper type, as well as th
 <br>
 <br>
 
-
-
-
-
-
-
-(Which accounts are the top buyers and what products are they buying)
-List accounts top buyers from top to bottom along with the quantity and total of each product
+List accounts top buyers from top to bottom along with the total quantity of each product.
 <br>
 ![](/images/11.png)
 <br>
+Which accounts are the top buyers and what products are they buying.
 
+<br>
+<br>
 
-
-
-For each account, determine the average amount spent per order on each paper type. Your result should have four columns - one for the account name and one for the average amount spent on each paper type.
+For each account, determine the average amount spent per order on each paper type.
 <br>
 ![](/images/12.png)
 <br>
+How much are customers spending on each product, and what is the mean of total sales to avoid outliers that my skewd the results.
 
+<br>
+<br>
 
-
-
-
-We would like to understand 3 different levels of customers based on the amount associated with their purchases. The top level includes anyone with a Lifetime Value (total sales of all orders) greater than 200,000 usd. The second level is between 200,000 and 100,000 usd. The lowest level is anyone under 100,000 usd. Provide a table that includes the level associated with each account. You should provide the account name, the total sales of all orders for the customer, and the level. Order with the top spending customers listed first.
+We would like to understand 3 different levels of customers based on the amount associated with their purchases. The top level includes anyone with a Lifetime Value (total sales of all orders) greater than 200,000 usd. The second level is between 200,000 and 100,000 usd. The lowest level is anyone under 100,000 usd. Provide the level associated with each account in the results.
 <br>
 ![](/images/13.png)
 <br>
-
+Want to know who is your most loyal customer who spends a lot of money on the products.
 
 
 
@@ -178,7 +162,8 @@ How many accounts had more total purchases than the account name which has bough
 <br>
 
 
-
+<br>
+<br>
 
 What is the lifetime average amount spent in terms of total_amt_usd for the top 10 total spending accounts?
 <br>
@@ -186,15 +171,17 @@ What is the lifetime average amount spent in terms of total_amt_usd for the top 
 <br>
 
 
+<br>
+<br>
 
-
-######################################################
+What is the average of total sales for each of the top 10 buyers.
 <br>
 ![](/images/16.png)
 <br>
 
 
-
+<br>
+<br>
 
 
 
